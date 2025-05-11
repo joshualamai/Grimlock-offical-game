@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Password Security Game Tests</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/mocha@10.2.0/mocha.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/mocha@10.2.0/mocha.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chai@4.3.7/chai.min.js"></script>
+    <script>
+        mocha.setup('bdd');
+        window.isTestMode = true;
+    </script>
+</head>
+<body>
+    <div id="mocha"></div>
+    <input id="password-input" type="text" />
+    <div id="password-display"></div>
+    <input id="scrambled-input" type="text" />
+    <input id="leetspeak-input" type="text" />
+    <div id="message"></div>
+    <span id="points">100</span>
+    <div id="timer-display"></div>
+    <div id="tutorial-section"></div>
+    <div id="level-info"></div>
+    <div id="password-section"></div>
+    <div id="scrambled-password-section"></div>
+    <div id="strong-password-section"></div>
+    <div id="pattern-section"></div>
+    <div id="combined-words-section"></div>
+    <div id="cipher-section"></div>
+    <div id="phishing-section"></div>
+    <div id="high-score"></div>
+    <div id="game-container"></div>
+    <div id="highscore-details"></div>
+    <div id="analytics-report"></div>
+    <div id="admin-login"></div>
+    <div id="admin-difficulty-selection"></div>
+    <div id="admin-panel"></div>
+    <button id="reveal-l1-btn"></button>
+    <button id="reveal-l2-btn"></button>
+    <button id="reveal-l3-btn"></button>
+    <button id="reveal-l1-btn-level"></button>
+    <div id="give-up-container"></div>
+    <input id="admin-username" />
+    <input id="admin-password" />
+    <div id="clear-hint-display"></div>
+    <div id="clear-hint-display2"></div>
+    <div id="clear-hint-display3"></div>
+    <div id="clear-hint-display4"></div>
+    <div id="clear-hint-display5"></div>
+    <div id="clear-hint-display6"></div>
+    <div id="medium-intro-section"></div>
+    <div id="hard-intro-section"></div>
+    <div id="tutorial-message"></div>
+    <input id="tutorial-workings" />
+    <button id="show-leetspeak-btn"></button>
+    <div id="leetspeak-result"></div>
+    <div id="leetspeak-input-section"></div>
+    <div id="sequence-bank"></div>
+    <div id="sequence-bank-content"></div>
+    <div id="word-bank"></div>
+    <div id="word-bank-content"></div>
+    <div id="cipher-password"></div>
+    <div id="cipher-keys-found"></div>
+    <div id="cipher-key-display"></div>
+    <div id="phishing-feedback"></div>
+    <div id="final-points"></div>
+    <div id="final-level"></div>
+    <div id="difficulty-progress-buttons"></div>
+    <div id="analytics-player"></div>
+    <script src="scripts.js"></script>
+    <script src="tests.js"></script>
+    <script>
+        document.getElementById("password-input").value = "password123";
+        document.getElementById("password-display").innerText = "321drowssap"; // reversed for level 1
+        verifyPassword();
+    </script>
+</body>
+</html> 
